@@ -32,6 +32,6 @@ class PyObjectId(ObjectId):
         return json_schema
 
 class Voter(BaseModel):
-    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
+    id: str = Field(default_factory=lambda: str(PyObjectId()), alias="_id")
     name: str
     has_voted: bool = False
