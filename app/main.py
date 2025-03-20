@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from views.voter_view import router as VoterRouter
+from app.views.voter_view import router as VoterRouter
 
 app = FastAPI()
 

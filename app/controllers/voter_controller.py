@@ -1,6 +1,6 @@
 from fastapi import HTTPException
-from models.voter import Voter
-from database import voters_collection
+from app.models.voter import Voter
+from app.database import voters_collection
 from bson import ObjectId
 
 async def register_voter(voter: Voter):

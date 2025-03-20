@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from models.voter import Voter
-from controllers.voter_controller import register_voter, get_voters
+from app.models.voter import Voter
+from app.controllers.voter_controller import register_voter, get_voters
 
 router = APIRouter()
 
